@@ -1,8 +1,6 @@
 package com.amazon.AmazonDemo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import org.springframework.stereotype.Component;
 
 @Entity
@@ -17,6 +15,18 @@ public class Product {
     private int quantity;
     private String description;
     private String review;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "order_id")
+    private PurchaseOrder order;
+
+    public PurchaseOrder getOrder() {
+        return order;
+    }
+
+    public void setOrder(PurchaseOrder order) {
+        this.order = order;
+    }
 
     public int getId() {
         return id;

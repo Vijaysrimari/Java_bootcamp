@@ -1,4 +1,4 @@
-package com.amazon.AmazonDemo.controller;
+/*package com.amazon.AmazonDemo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,3 +13,5 @@ public class HomeController {
         return "welcome";
     }
 }
+
+ */

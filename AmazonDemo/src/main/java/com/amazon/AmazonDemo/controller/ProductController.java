@@ -1,6 +1,8 @@
+/*
 package com.amazon.AmazonDemo.controller;
+ */
 //import com.amazon.AmazonDemo.exception.ProductNotFoundException;
-import com.amazon.AmazonDemo.model.Product;
+/*import com.amazon.AmazonDemo.model.Product;
 import com.amazon.AmazonDemo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -41,7 +43,7 @@ public class ProductController {
         return service.deleteProduct(id);
     }*/
 
-    @GetMapping
+    /*@GetMapping
     public String getAllProducts(Model model) {
         model.addAttribute("products", service.getAllProducts());
         model.addAttribute("product", new Product());
@@ -62,3 +64,4 @@ public class ProductController {
 
 
 }
+*/
